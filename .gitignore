@@ -1,0 +1,27 @@
+# Secrets — real DB password, WhatsApp token, Sheets sync token.
+# Copy public_html/config.example.php to public_html/config.php and fill in real values.
+public_html/config.php
+
+# One-time installer — delete from the live server after setup, never publish its run.
+# (kept out of safety; remove this line if you want install.php tracked)
+
+# Uploaded content (student data, event photos, admit cards) — not source code.
+public_html/storage/events/*
+public_html/storage/gallery/*
+public_html/storage/main/*
+public_html/storage/admit_cards/*
+!public_html/storage/**/index.html
+!public_html/storage/**/.htaccess
+
+# Local dev / build
+website-source/node_modules/
+website-source/dist/
+
+# This machine's local preview config (has absolute local paths)
+.claude/launch.json
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
